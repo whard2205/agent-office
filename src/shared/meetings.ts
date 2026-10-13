@@ -209,7 +209,7 @@ export function meetingRecord(m: Meeting): MeetingRecord {
     calledBy: m.calledBy,
     startedAt: m.startedAt,
     finishedAt: m.finishedAt ?? Date.now(),
-    rounds: m.round,
+    rounds: m.rounds,
     seats: m.seats.map(({ role, workerName, tokens, cost }) => ({ role, workerName, tokens, cost })),
     branch: m.worktree?.branch,
     output: m.output,
